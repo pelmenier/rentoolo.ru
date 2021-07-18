@@ -478,6 +478,16 @@
     <Content Include="HomeGarden.aspx" />
     <Content Include="Job.aspx" />
     <Content Include="Manager\Web.config" />
+    <Content Include="Model\Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
+    <Content Include="Model\Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
     <Content Include="News.aspx" />
     <Content Include="PersonalGoods.aspx" />
     <Content Include="Pets.aspx" />
@@ -485,6 +495,9 @@
     <Content Include="Services.aspx" />
     <Content Include="Success.aspx" />
     <Content Include="yandex_f9c03f80c16c0af8.html" />
+    <Content Include="AdminMaster.Master" />
+    <Content Include="Events.ashx" />
+    <Content Include="CraftsMan\assetsCM\categoriesCraftsMan_ru.json" />
     <EntityDeploy Include="Model\Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model1.Designer.cs</LastGenOutput>
@@ -492,9 +505,6 @@
     <Content Include="Model\Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
     </Content>
-    <Content Include="AdminMaster.Master" />
-    <Content Include="Events.ashx" />
-    <Content Include="CraftsMan\assetsCM\categoriesCraftsMan_ru.json" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="img\avatars\noPhoto.png" />
     <Content Include="img\a\noPhoto.png" />
@@ -508,16 +518,6 @@
     <Content Include="img\kitchen\venskie-vafli.jpg" />
     <Content Include="img\kitchen\vozdushnie-blini-na-pahte.jpg" />
     <Content Include="Manager\ManageAdvert.aspx" />
-    <Content Include="Model\Model1.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Model1.Context.cs</LastGenOutput>
-      <DependentUpon>Model1.edmx</DependentUpon>
-    </Content>
-    <Content Include="Model\Model1.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model1.edmx</DependentUpon>
-      <LastGenOutput>Model1.cs</LastGenOutput>
-    </Content>
     <Content Include="Rent.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
