@@ -609,6 +609,17 @@
           <Property Name="CreateDate" Type="datetime" Nullable="false" />
           <Property Name="Active" Type="bit" Nullable="false" />
         </EntityType>
+        <EntityType Name="Newspelmenier">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Text" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Date" Type="datetime" Nullable="false" />
+          <Property Name="Authorld" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="Active" Type="bit" Nullable="false" />
+        </EntityType>
         <EntityType Name="NewsRaspel">
           <Key>
             <PropertyRef Name="Id" />
@@ -1383,6 +1394,7 @@
           <EntitySet Name="Newsillfyar" EntityType="Self.Newsillfyar" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="NewsIlya" EntityType="Self.NewsIlya" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="NewsMrshkVV" EntityType="Self.NewsMrshkVV" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Newspelmenier" EntityType="Self.Newspelmenier" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="NewsRaspel" EntityType="Self.NewsRaspel" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="NewsVark" EntityType="Self.NewsVark" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="NewsVlad" EntityType="Self.NewsVlad" Schema="dbo" store:Type="Tables" />
@@ -2149,6 +2161,17 @@
           <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="Active" Type="Boolean" Nullable="false" />
         </EntityType>
+        <EntityType Name="Newspelmenier">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Authorld" Type="Guid" Nullable="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Active" Type="Boolean" Nullable="false" />
+        </EntityType>
         <EntityType Name="NewsRaspel">
           <Key>
             <PropertyRef Name="Id" />
@@ -2772,6 +2795,7 @@
           <EntitySet Name="Newsillfyar" EntityType="Self.Newsillfyar" />
           <EntitySet Name="NewsIlya" EntityType="Self.NewsIlya" />
           <EntitySet Name="NewsMrshkVV" EntityType="Self.NewsMrshkVV" />
+          <EntitySet Name="Newspelmenier" EntityType="Self.Newspelmenier" />
           <EntitySet Name="NewsRaspel" EntityType="Self.NewsRaspel" />
           <EntitySet Name="NewsVark" EntityType="Self.NewsVark" />
           <EntitySet Name="NewsVlad" EntityType="Self.NewsVlad" />
@@ -3763,6 +3787,18 @@
                 <ScalarProperty Name="Text" ColumnName="Text" />
                 <ScalarProperty Name="Date" ColumnName="Date" />
                 <ScalarProperty Name="AuthorId" ColumnName="AuthorId" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Newspelmenier">
+            <EntityTypeMapping TypeName="RentooloModel.Newspelmenier">
+              <MappingFragment StoreEntitySet="Newspelmenier">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Text" ColumnName="Text" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Authorld" ColumnName="Authorld" />
                 <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
                 <ScalarProperty Name="Active" ColumnName="Active" />
               </MappingFragment>

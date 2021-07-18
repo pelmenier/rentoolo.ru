@@ -480,8 +480,8 @@
     <Content Include="Manager\Web.config" />
     <Content Include="Model\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Model1.Context.cs</LastGenOutput>
       <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
     </Content>
     <Content Include="Model\Model1.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -489,6 +489,7 @@
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
     <Content Include="News.aspx" />
+    <Content Include="pelmenier\Newspelmenier.aspx" />
     <Content Include="PersonalGoods.aspx" />
     <Content Include="Pets.aspx" />
     <Content Include="Realty.aspx" />
@@ -1582,6 +1583,7 @@
     <Compile Include="Model\DataHelperillfyar.cs" />
     <Compile Include="Model\DataHelperIlya.cs" />
     <Compile Include="Model\DataHelperMrshkVV.cs" />
+    <Compile Include="Model\DataHelperPelmenier.cs" />
     <Compile Include="Model\DataHelperRaspel.cs" />
     <Compile Include="Model\DataHelperShCodder.cs" />
     <Compile Include="Model\DataHelperTowardsbackwards.cs" />
@@ -1718,6 +1720,9 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Model\NewsMrshkVV.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Newspelmenier.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Model\NewsRaspel.cs">
@@ -1880,6 +1885,13 @@
     </Compile>
     <Compile Include="News.aspx.designer.cs">
       <DependentUpon>News.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pelmenier\Newspelmenier.aspx.cs">
+      <DependentUpon>Newspelmenier.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pelmenier\Newspelmenier.aspx.designer.cs">
+      <DependentUpon>Newspelmenier.aspx</DependentUpon>
     </Compile>
     <Compile Include="PersonalGoods.aspx.cs">
       <DependentUpon>PersonalGoods.aspx</DependentUpon>
